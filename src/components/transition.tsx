@@ -1,5 +1,4 @@
 import { motion, useAnimation } from "framer-motion";
-import { head, text } from "framer-motion/client";
 import { useEffect, useState } from "react";
 
 export function TransitionLayout({ children }: { children: React.ReactNode }) {

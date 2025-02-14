@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-function Box() {
+function Section1() {
 
   return (
     <div className="mx-4 p-4">
@@ -38,41 +38,48 @@ function Box() {
             </div>
         </div>
     </div>
-        <div className=" flex">
+        <div className=" flex pb-8">
                 <div id="left" className="h-144 w-full max-w-1/3  flex items-end">
                         <div className=" w-112 text-3xl font-sans decoration-4 font-semibold">
                         Sundown is a multi-disciplinary studio focused on creating unique, end-to-end experiences and environments.
                         </div>
                 </div>
-                <div id="right" className=" h-144 w-full max-w-2/3 text-[8vw] font-bold flex justify-end gap-2 text-right">
+                <div id="right" className=" h-144 w-full max-w-2/3 text-[8vw] font-bold flex justify-end  gap-2 text-right tracking-tight">
                          <div className=" w-128 right-0 pr-2">
                             SPACES THAT INSPIRE
                          </div>
                 </div>
         </div>
-        <div className="relative flex justify-end p-12">
-            <motion.div className=" absolute border-2 h-110 w-130 bg-[rgba(255,69,0)] border-[rgba(255,69,0)] rounded-l-full rounded-r-4xl blur-xs shadow-[0_0_60px_rgba(255,69,0)]"
-            animate={{scale: [1.1,1.3,1.1]}}
+        <div className="border border-slate-200">
+        </div>
+        <div className="relative -mt-20">
+        <div className="relative flex justify-end p-24">
+            <motion.div className=" absolute border-2 h-80 w-160 bg-[rgba(255,69,0)] border-[rgba(255,69,0)] rounded-tl-full rounded-bl-2xl rounded-tr-2xl blur-xs shadow-[0_0_60px_rgba(255,69,0)]"
+            animate={{scale: [1.2,1.4,1.2]}}
             transition={{duration: 5, repeat: Infinity, ease: "easeInOut", delay: 0.4}}
             >
-                    
+
             </motion.div>
-            <motion.div className=" absolute border-2 h-90 w-70 bg-[rgba(255,69,0)] border-[rgba(255,69,0)] rounded-full blur-xs shadow-[0_0_40px_rgba(255,69,0)]"
+            {/* <motion.div className=" absolute border-2 h-90 w-130 bg-[rgba(255,69,0)] border-[rgba(255,69,0)]   rounded-tr-full blur-sm shadow-[0_0_40px_rgba(255,69,0)]"
             animate={{scale: [1,1.2,1]}}
             transition={{duration: 5, repeat: Infinity, ease: "easeInOut", delay: 0.4}}
             >
-            </motion.div>
+            </motion.div> */}
         </div>
-        <br />
-        <br />
-        <br />
-        <div className="relative">
+        
+        <div className="relative mb-8">
         <video className="rounded-xl absolute "  autoPlay loop muted src="https://awwwards-sundown-studio.vercel.app/vdonimgs/bg-vdo.mp4"></video>
+        </div>
+        <div className="border border-slate-200">
+        </div>
+        <div className="h-screen">
+
+        </div>
         </div>
     </div>
   );
 }
 
-export default Box;
+export default Section1;
 
 
