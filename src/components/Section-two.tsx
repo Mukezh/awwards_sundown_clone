@@ -2,10 +2,10 @@ import { motion } from "framer-motion";
 
 export function Section2() {
     return(
-        <div>
-        <div  className="h-screen overflow-x-scroll ">
+        <div className="w-screen">
+        <div  className="h-screen w-screen overflow-hidden ">
            <motion.div
-        className="flex items-center whitespace-nowrap"
+        className="flex items-center whitespace-nowrap scrollbar-hide"
         animate={{ x: ["0%", "-100%"] }} // Moves content left
         transition={{ ease: "linear", duration: 8, repeat: Infinity }} // Smooth infinite loop
       >
@@ -37,7 +37,7 @@ export function Section2() {
         </motion.div>
 
         <div className="flex justify-between">
-            <div className=" relative w-full max-w-2/3 pl-12 pr-48">
+            <div className=" relative w-screen max-w-2/3 pl-4 pr-40">
             
             <div >
                 <motion.div className="ml-128 mt-64 border-2 h-95 w-90 bg-[rgba(255,69,0)] border-[rgba(255,69,0)]   rounded-full blur-sm shadow-[0_0_40px_rgba(255,69,0)]"
@@ -46,7 +46,7 @@ export function Section2() {
                 >
                 </motion.div> 
             </div>
-            <div className="absolute -mt-164 text-6xl text-left pt-48 pr-36 font-bold">
+            <div className="absolute -mt-164 text-6xl text-left pt-40 pr-36 font-bold">
             We are a group of design-driven, goal-focused creators, producers, and designers who believe that the details make all the difference.
             </div>
             </div>
@@ -61,6 +61,9 @@ export function Section2() {
         </div>
         <div className="border border-slate-200">
         </div>
+        <br />
+        <br />
+        <br />
         </div>
         </div>
     )
