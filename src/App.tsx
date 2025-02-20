@@ -14,8 +14,8 @@ function App() {
   return (
     <div>
       <div className='bg-orange-50 w-screen'>
-       {/* <TransitionLayout children= {<Section1 />}/> */}
-       {/* <Section2 />  */}
+       <TransitionLayout children= {<Section1 />}/> 
+        <Section2 /> 
       {/* <Section3 />  */}
       {/* <Section4 /> */}
       {/* <TransitionLayout children= {<Section5 />}/> */}

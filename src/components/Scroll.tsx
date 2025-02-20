@@ -1,6 +1,8 @@
 import React from "react";
 import { motion, useScroll, useTransform } from "framer-motion";
 import { Section2 } from "./Section-two";
+import { Section4 } from "./Section-four";
+import { Section3 } from "./Section-three";
 
 
 const MyComponent = () => {
@@ -10,21 +12,23 @@ const MyComponent = () => {
   // Transform scroll progress into translateY values for section 1
   const y = useTransform(scrollYProgress, [0, 1], ["0%", "-100%"]);
 
-  return (
-    <div className="h-[140vh] overflow-hidden relative">
+  return (<>
+  <Section3 />
+    <div className=" h-[140vh] overflow-hidden relative">
       {/* Section 1 */}
       <motion.div
         style={{ y }}
-        className="h-screen w-screen bg-blue-500 flex items-center justify-center absolute top-0 left-0"
+        className="h-screen w-screen bg-white flex items-center justify-center absolute top-0 left-0"
       >
-        <h1 className="text-white text-4xl">Section 1</h1>
+        {/* <h1 className="text-white text-4xl">Section 1</h1> */}
+        {/* <Section4 /> */}
       </motion.div>
 
       {/* Section 2 */}
-      <div className=" h-[140vh]  bg-green-500 flex items-center justify-center -m-t-[100vh] top-[100vh] left-0 ">
+      <div className=" h-[140vh]  bg-black text-white flex items-center justify-center -m-t-[100vh] top-[100vh] left-0 ">
         <div className=" mt-[40vh] h-screen w-screen  pt-24 ">
           
-          <div className="flex justify-between">
+          <div className="px-8 flex justify-between">
             <div>
               <div>
                 Work
@@ -66,6 +70,7 @@ const MyComponent = () => {
         </div> 
       </div>
     </div>
+    </>
   );
 };
 
