@@ -2,7 +2,7 @@ import { motion } from 'framer-motion';
 
 function Section1() {
   return (
-    <div className="w-full overflow-x-hidden bg-orange-50">
+    <div className="w-full overflow-x-hidden bg-orange-50 pb-24">
       <div className="max-w-full mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header/Nav */}
         <div className="flex flex-col sm:flex-row justify-between items-center gap-4 pt-4">

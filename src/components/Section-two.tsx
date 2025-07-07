@@ -1,8 +1,8 @@
 import { motion } from 'framer-motion';
 export function Section2() {
   return (
-    <div className="w-full overflow-x-hidden">
-      <div className=" w-full overflow-hidden">
+    <div className="w-full overflow-x-hidden py-24">
+      <div className=" w-full overflow-hidden py-24">
         <motion.div
           className="flex items-center whitespace-nowrap scrollbar-hide w-full"
           animate={{ x: ['0%', '-100%'] }}
@@ -44,7 +44,7 @@ export function Section2() {
           ))}
         </motion.div>
 
-        <div className="flex flex-col lg:flex-row mt-8 px-4 items-stretch">
+        <div className="flex flex-col lg:flex-row mt-8 px-4 items-stretch pt-32">
           <div className="relative w-full lg:w-2/3">
             <div>
               <motion.div
@@ -71,7 +71,7 @@ export function Section2() {
             </div>
           </div>
         </div>
-        <div className="border border-slate-200 mt-8" />
+        {/* <div className="border border-slate-200 mt-8" /> */}
       </div>
     </div>
   );

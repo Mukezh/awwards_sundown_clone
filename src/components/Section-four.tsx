@@ -31,7 +31,7 @@ export function Section4() {
   const marqueeItems = [...items, ...items];
 
   return (
-    <div className="w-full overflow-x-hidden flex items-center py-24">
+    <div className="w-full overflow-x-hidden flex items-center py-32">
       <div className="w-full">
         <motion.div
           className="flex flex-nowrap gap-4 px-2 md:px-8"

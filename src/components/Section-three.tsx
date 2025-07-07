@@ -4,7 +4,7 @@ export function Section3() {
   const [hovered, setHovered] = useState<number | null>(null);
 
   return (
-    <div className="relative w-full max-w-full font-serif overflow-x-hidden mb-0 pb-0">
+    <div className="relative w-full max-w-full font-serif overflow-x-hidden mb-0 pt-32">
       {/* Preview image absolutely positioned and only rendered on hover */}
       {hovered !== null && (
         <img
@@ -40,7 +40,7 @@ export function Section3() {
           id={String(item.id)}
           onMouseEnter={() => setHovered(item.id)}
           onMouseLeave={() => setHovered(null)}
-          className="h-24 md:h-36 w-full flex justify-between items-center border-b hover:bg-amber-400 transition-colors duration-200 px-2 md:px-4 relative z-10"
+          className="h-24 md:h-36 w-full flex justify-between items-center border-b hover:bg-amber-400  duration-200 px-2 md:px-4 relative z-10"
         >
           <div className="text-lg md:text-4xl flex items-center pl-2 md:pl-4">{item.title}</div>
           <div className="pr-2 md:pr-4 text-right">
