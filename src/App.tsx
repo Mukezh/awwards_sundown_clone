@@ -1,9 +1,7 @@
 import './App.css';
 import { Section4 } from './components/Section-four';
 import Section1 from './components/Section-one';
-import { Section3 } from './components/Section-three';
 import { Section2 } from './components/Section-two';
-import { Section5 } from './components/Section-five';
 import { TransitionLayout } from './components/transition';
 import MyComponent from './components/Scroll';
 
